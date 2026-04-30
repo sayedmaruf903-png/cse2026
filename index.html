@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch 26 -  Mobile App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Floating Decorative Elements -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="app-icon">
+                <img src="icon.png" alt="CSE 26 App Icon" class="icon">
+            </div>
+            <h1 class="app-title">CSE 26</h1>
+            <p class="app-subtitle">Official Mobile App</p>
+            <div class="version-info">
+                <span class="version-badge">Beta Release 1.00</span>
+            </div>
+            <div class="badge">
+                <span>CSE 26 Batch</span>
+            </div>
+
+        </header>
+
+        <!-- App Info Section -->
+        <section class="app-info">
+            <h2>University of Chittagong</h2>
+            <p class="description">
+                The official mobile application for CSE 26 batch students. Stay connected with your batch mates, 
+                access important updates, and enjoy exclusive features designed specifically for our community.
+            </p>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download-section">
+            <h3>Download Now</h3>
+            <p class="download-subtitle">Choose the version that works best for your device</p>
+            
+            <div class="download-buttons">
+                <a href="https://pub-8a374a24b73c4ad59328bc9e2e0343d7.r2.dev/prottoyi25.apk" class="download-btn primary" target="_blank">
+                    <i class="fas fa-download"></i>
+                    <div class="btn-content">
+                        <span class="btn-title">Final Release APK</span>
+                        <span class="btn-subtitle">For all devices</span>
+                        <span class="btn-size">45 MB</span>
+                    </div>
+                </a>
+                
+                <a href="https://csecu25-j18ou38wd-sayed-marufs-projects-654f0b1e.vercel.app" class="visit-website-btn" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Visit Website (Under construction)
+                </a>
+            </div>
+        </section>
+
+      
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Connect with Batchmates</h3>
+                    <p>Stay connected with your CSE 26 batch friends and classmates</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-calendar"></i>
+                    <h3>Event Updates</h3>
+                    <p>Get notified about important batch events and activities</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Academic Resources</h3>
+                    <p>Access study materials and academic information</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Section -->
+        <section class="developer">
+            <h3>Developer</h3>
+            <div class="developer-info">
+                <div class="developer-details">
+                    <h4>Sayed Maruf</h4>
+                    <p>CSE 26 Batch, University of Chittagong</p>
+                    <a href="https://www.facebook.com/profile.php?id=100091346253784" target="_blank" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                        Connect on Facebook
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 CSE 26. All rights reserved.</p>
+            <p>University of Chittagong - CSE Department</p>
+        </footer>
+    </div>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Download Starting...</h3>
+            <p id="downloadMessage">Your download will begin shortly.</p>
+            <div class="loading-spinner"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
