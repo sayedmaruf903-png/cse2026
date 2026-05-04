@@ -27,7 +27,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
-                    behavior: 'smooth'
+                    behavior: 'instant'
                 });
             }
         }
@@ -51,23 +51,10 @@ screenshots.forEach(img => {
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Prottoyi 26 Landing Page Loaded');
     
-    // Add fade-in animation to sections
+    // Sections visible immediately, no animation
     const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
-    
     sections.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(20px)';
-        section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-        observer.observe(section);
+        section.style.opacity = '1';
+        section.style.transform = 'none';
     });
 });
